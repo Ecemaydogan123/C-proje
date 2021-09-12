@@ -1,0 +1,29 @@
+namespace WindowsFormsApplication1
+ {
+public partial class Form1 : Form
+ {
+public Form1()
+ {
+InitializeComponent(); 
+}
+enum AlanKodu : long 
+{
+ANKARA=312,
+ANTALYA=242,
+İZMİR=232,
+KONYA=332, 
+}
+private void Form1_Load(object sender, System.EventArgs e) 
+{
+comboBox1.Items.Add(AlanKodu.ANKARA);
+comboBox1.Items.Add(AlanKodu.ANTALYA);
+comboBox1.Items.Add(AlanKodu.İZMİR);
+comboBox1.Items.Add(AlanKodu.KONYA); }
+private void button1_Click(object sender, EventArgs e) 
+{
+textBox1.Text = "Bulunamadı";
+ }
+private void textBox1_TextChanged(object sender, EventArgs e) {
+  } 
+      }  
+            }
