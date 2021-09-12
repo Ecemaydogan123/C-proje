@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+{
+InitializeComponent(); {private void button1_Click(object sender, EventArgs e) {int kilo, boy, sonuc;
+kilo = Convert.ToInt32(txtKilo.Text);
+boy = Convert.ToInt32(txtBoy.Text);
+sonuc = 0;
+// boy - ((150-boy)/4)+110
+sonuc = boy - (((150 - boy) / 4) + 110);
+if (kilo > sonuc) {
+lblSonuc.Text = "Fazla Kilolusunuz. İdeal Kilonuzdan " +
+Math.Abs(Convert.ToInt32(sonuc - kilo)) + " kg fazlanız var"; }
+else if (kilo < sonuc) {
+lblSonuc.Text = "Zayıfsınız. İdeal Kilonuzdan " + Convert.ToInt32(sonuc- "kg eksiğiniz var"; {
+else {
+lblSonuc.Text = "Tebrikler İdeal Kilodasınız...";
+  }    }     }    }
